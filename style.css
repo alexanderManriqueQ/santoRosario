@@ -1,0 +1,174 @@
+/* Estilos generales */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 65.5%;
+        font-family: 'DM Sans', sans-serif;
+        background: linear-gradient(to bottom,rgb(200, 200, 200),rgb(250,250,250));
+        height: 100vh;
+    }
+
+/* Estilos del header */
+    header{
+        width: 100%;
+    }
+
+    /* titulo */
+    header h1{
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    /* tipo de rezo */
+    .tipoDeRezo-contenedor{
+        display: flex;
+        justify-content: center;
+    }
+    .tipoDeRezo{
+        width: 44px;
+        height: 44px;
+        margin: 0 10px;
+        border: none;
+    }
+    .virgen{
+        background-image: url('./assets/imagenes/virgen.jfif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .señor{
+        background-image: url('./assets/imagenes/señor.jfif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    /* dias de la semana */
+    .diasDeLaSemana-contenedor{
+        display: flex;
+        justify-content: center;
+    }
+    .diasDeLaSemana{
+        width: 30px;
+        height: 30px;
+        font-size: large;
+        text-align: center;
+        padding-top: 3px;
+        margin-top: 10px;
+        margin-left: 3px;
+        margin-right: 3px;
+        /* cursor: pointer; */
+    }
+
+/* Estilos del main */
+    main{
+        text-align: center;
+    }
+    .contenedor-alfa{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    /* subtitulo */
+    main .misterios{
+        margin-top: 5px;
+    }
+    /* rosario */
+    main .rosario-contenedor{
+        /* border: 1px solid blue; */
+        width: 320px;
+        height: 290px;
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: repeat(5,20%);
+    }
+    main .bola{
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .numero{
+        grid-column: 2/4;
+        grid-row: 3/5;
+    }
+    .num-div{
+        font-size: 50px;
+    }
+    .ave-div, .glo-div, .pad-div{
+        width: 40px;
+        height: 40px;
+        /* border: 1px solid rgb(250,0,100); */
+        border-radius: 50px;
+        /* background-color: rgb(245,0,40); */
+        background: radial-gradient(at top left, #ffff00 20%, #bf930d);
+    }
+    .pad-div{
+        position: relative;
+        top: 17px;
+        background: radial-gradient(at top left, #00ff80 20%, #bf930d);
+        border: none;
+    }
+    .glo-div{
+        position: relative;
+        top: 17px;
+        background: radial-gradient(at top left, #ff3300 20%, #bf0d0d);
+        border: none;
+    }
+    .ave-div:hover{
+        width: 60px;
+        height: 60px;
+        /* border: 1px solid rgb(250,0,100); */
+        border-radius: 50px;
+        background-color: rgb(230,0,100);
+        box-shadow: 1px 1px 80px 0 rgb(70, 70, 70);
+    }
+
+    .glo-div:hover{
+        width: 60px;
+        height: 60px;
+        /* border: 1px solid rgb(250,0,100); */
+        border-radius: 50px;
+        background-color: rgb(160, 200, 50);
+        box-shadow: 1px 1px 80px 0 rgb(70, 70, 70);
+    }
+    .pad-div:hover{
+        width: 60px;
+        height: 60px;
+        /* border: 1px solid rgb(250,0,100); */
+        border-radius: 50px;
+        background-color: rgb(50, 100, 200);
+        box-shadow: 1px 1px 80px 0 rgb(70, 70, 70);
+    }
+
+    .aveMaria1, .aveMaria10{
+        position: relative;
+        top: 7px;
+    }
+    .aveMaria9, .aveMaria7{
+        position: relative;
+        left: 17px;
+    }
+    .aveMaria4, .aveMaria2{
+        position: relative;
+        right: 17px;
+    }
+    
+
+
+
+
+
+    main .misterio{
+        margin-top: 20px;
+        letter-spacing: 1.5px;
+        line-height: 1.8;
+    }
+
+
+    
